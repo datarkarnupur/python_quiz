@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Quiz Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="quiz-container">
+
+        <!-- Welcome Screen -->
+        <div id="welcome-screen">
+            <h1>Python Quiz Challenge</h1>
+            <p>Test your Python knowledge!</p>
+
+            <input type="text" id="player-name"
+                   placeholder="Enter your name">
+
+            <button id="start-btn">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="hide">
+
+            <div class="quiz-header">
+                <span id="question-count">Question 1 of 5</span>
+                <span id="timer">15 seconds</span>
+            </div>
+
+            <div class="progress">
+                <div id="progress-bar"></div>
+            </div>
+
+            <h2 id="question">Question goes here</h2>
+
+            <div id="answer-buttons" class="options"></div>
+
+            <button id="next-btn" class="hide">
+                Next Question
+            </button>
+
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" class="hide">
+
+            <h1>Quiz Completed!</h1>
+
+            <h2 id="result-name"></h2>
+
+            <div class="result-box">
+                <h2 id="final-score">0 / 5</h2>
+                <p id="percentage">0%</p>
+                <p id="feedback"></p>
+            </div>
+
+            <button id="restart-btn">Play Again</button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
